@@ -1,0 +1,31 @@
+.Root {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.WrapperIcons {
+    display: flex;
+    column-gap: 20px;
+}
+
+@media only screen and (min-width: 48em) {
+    .Image {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    .Image {
+        width: 40%;
+    }
+}

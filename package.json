@@ -1,0 +1,36 @@
+{
+    "name": "sberator",
+    "version": "0.0.0",
+    "description": "Генерация имён",
+    "main": "index.js",
+    "author": "Ivan Bogdanovich <ivan.bogdanovich2013@gmail.com>",
+    "scripts": {
+        "start": "cross-env NODE_ENV=production node app.js",
+        "server": "nodemon app.js",
+        "frontend": "npm run start --prefix frontend",
+        "frontend:install": "npm install --prefix frontend",
+        "frontend:build": "npm run build --prefix frontend",
+        "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run frontend\""
+    },
+    "keywords": [
+        "Mongo",
+        "Express",
+        "React",
+        "Node"
+    ],
+    "license": "ISC",
+    "dependencies": {
+        "config": "^3.3.2",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-validator": "^6.6.1",
+        "fs": "0.0.1-security",
+        "mongoose": "^5.10.15",
+        "react-router-dom": "^5.2.0"
+    },
+    "devDependencies": {
+        "concurrently": "^5.3.0",
+        "cross-env": "^7.0.2",
+        "nodemon": "^2.0.6"
+    }
+}

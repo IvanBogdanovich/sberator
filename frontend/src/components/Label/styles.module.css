@@ -1,0 +1,16 @@
+.Root {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+
+    color: var(--ita);
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 48em) {
+    .Root {
+        left: 35px;
+
+        font-size: 1.5rem;
+    }
+}
