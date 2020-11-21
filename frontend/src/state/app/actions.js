@@ -17,11 +17,15 @@ export function getInitializedSuccess() {
 // Сетаем в глобал стор сгенерённое имя, фамилию
 export function setGenerateDataName(values) {
     const { name, surname } = values;
+
+    const nameForState = name.trim();
+    const surnameForState = surname.trim();
+
     return {
         type: types.SET_GENERATED_DATA_NAMES,
 
-        namePrev: `${name} ${surname}`,
-        nameNext: `${generateSberName(name)} ${generateSberName(surname)}`,
+        namePrev: `${nameForState} ${surnameForState}`,
+        nameNext: `${generateSberName(nameForState)} ${generateSberName(surnameForState)}`,
     }
 }
 

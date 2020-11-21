@@ -28,16 +28,15 @@ function Share({ className, picture }) {
             <div className={cn(styles.WrapperIcons)}>
                 <VKShareButton
                     title="Сбер"
-                    url="sberbank.ru"
+                    url={window.location.href}
                     image={picture.src}
                 >
                     <VKIcon />
                 </VKShareButton>
 
                 <FacebookShareButton
+                    url={window.location.href}
                     quote="Сбер"
-                    hashtag={picture.src}
-                    url="sberbank.ru"
                 >
                     <FacebookIcon />
                 </FacebookShareButton>
@@ -46,7 +45,7 @@ function Share({ className, picture }) {
                     title="Сбер"
                     description="Сбер"
                     image={picture.src}
-                    url="sberbank.ru"
+                    url={window.location.href}
                 >
                     <OKIcon />
                 </OKShareButton>

@@ -8,7 +8,6 @@ import Canvas from './components/Canvas';
 // views
 import FormView from './views/FormView';
 import Share from './views/Share';
-import IE from './views/IE';
 
 // actions
 import { getInitializedSuccess, orderThunk } from './state/app/actions';
@@ -42,13 +41,6 @@ function App() {
 
     if (!isInitialApp || isOrderSending) {
         return <Loader />
-    }
-
-    if (
-        /MSIE 9/i.test(navigator.userAgent) ||
-        /rv:11.0/i.test(navigator.userAgent)
-    ) {
-        return <IE />
     }
 
     return (

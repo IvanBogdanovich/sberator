@@ -31,5 +31,8 @@
         "not IE 11",
         "not IE_Mob 11",
         "maintained node versions"
-    ]
+    ],
+    "devDependencies": {
+        "cross-env": "^7.0.2"
+    }
 }

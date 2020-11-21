@@ -59,5 +59,50 @@
         <noscript>You need to enable JavaScript to run this app.</noscript>
 
         <div id="root"></div>
+
+        <!-- Фолбэк для ие -->
+        <section id="IE" hidden>
+            <p id="IE__text" hidden></p>
+        </section>
+
+        <style>
+            #IE {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                height: 100vh;
+
+                background-color: #107f8c;
+            }
+
+            #IE__text {
+                margin-top: 0;
+                margin-bottom: 0;
+
+                max-width: 48em;
+
+                font-weight: 600;
+                font-size: 1.5em;
+                color: #fff;
+            }
+        </style>
+
+        <script>
+            if (
+                /MSIE 9/i.test(navigator.userAgent) ||
+                /rv:11.0/i.test(navigator.userAgent)
+            ) {
+                const date = new Date();
+                const cuurentYear = date.getFullYear();
+                const text = 'Привет! Сейчас' + ' ' + cuurentYear + ' ' + 'год. Уже много лет прошло с тех пор когда браузер Internet Explorer задавал тренды в индустрии. Я помню его ещё когда ярлычок на рабочем столе с ним назывался просто и гениально «Интернет». Клик по нему для нас детей нулевых закрывал потребность в любознательности. Сейчас IE – эта звёздочка которая ушла в закат. Низкий поклон создателям этих удивительных дверей в знания. Провожаю с честью и достоинством этот браузер который увеличил скорость прогресса по экспоненте!';
+
+                document.getElementById('IE__text').insertAdjacentHTML('beforeend', text);
+                document.getElementById('IE__text').removeAttribute('hidden');
+                document.getElementById('IE').removeAttribute('hidden')
+                document.getElementById('IE').setAttribute('style', 'display: flex');
+                document.getElementById('root').setAttribute('hidden', 'hidden');
+            }
+        </script>
     </body>
 </html>

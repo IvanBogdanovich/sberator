@@ -1,0 +1,5 @@
+{
+    "baseURL": "http://sberator.ru",
+    "port": 80,
+    "mongoUri": "mongodb+srv://ivanbogdanovich:y9u4mjHuPAhXn72@cluster0.kvudg.mongodb.net/<dbname>?retryWrites=true&w=majority"
+}

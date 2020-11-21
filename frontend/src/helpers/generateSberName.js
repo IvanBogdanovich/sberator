@@ -1,4 +1,8 @@
 export const generateSberName = (name) => {
+    if(name === 'Сергей') {
+        return 'Сберёжа';
+    }
+
     const prefix = 'Сбер';
 
     const vowel = [
@@ -25,5 +29,7 @@ export const generateSberName = (name) => {
     spliceNameArray.unshift(prefix);
     spliceNameArray.join(',');
 
-    return spliceNameArray.join('');
+    const sberName = spliceNameArray.join('');
+
+    return sberName;
 }
