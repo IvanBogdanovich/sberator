@@ -46,8 +46,8 @@ router.post(
         });
 
         // Запись в базу полей с формы
-        const user = new User({ namePrev, nameNext });
-        await user.save();
+        // const user = new User({ namePrev, nameNext });
+        // await user.save();
 
         // Отправляем пикчу на фронт если всё огонёк!
         res.status(201).json(

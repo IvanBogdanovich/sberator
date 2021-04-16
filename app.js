@@ -30,11 +30,11 @@ const PORT = config.get('port') || 5000;
 
 async function yo() {
     try {
-        await mongoose.connect(config.get('mongoUri'), {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useCreateIndex: true,
-        })
+        // await mongoose.connect(config.get('mongoUri'), {
+        //     useNewUrlParser: true,
+        //     useUnifiedTopology: true,
+        //     useCreateIndex: true,
+        // })
     }
 
     catch(e) {
